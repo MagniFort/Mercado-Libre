@@ -2,45 +2,26 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>MagniFort - Redirigiendo...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagniFort - Mercado Libre</title>
     <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '971210258826527'); fbq('track', 'PageView');
     </script>
 </head>
-<body style="text-align: center; font-family: Arial; margin-top: 100px;">
-    <h2>Abriendo en Mercado Libre...</h2>
-    <p>Si no abre automáticamente, toca el botón:</p>
-    <a href="intent://articulo.mercadolibre.com.mx/MLM-2593161695-magnesio-12-en-1-suplemento-alimenticio-citrato-malato-sin-sabor-_JM#Intent;scheme=https;package=com.mercadolibre;end" 
-       style="background: #3483fa; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">
-       ABRIR EN LA APP
-    </a>
+<body style="background-color: #f5f5f5; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; font-family: Arial, sans-serif;">
 
-    <script>
-        (function() {
-            var productUrl = "articulo.mercadolibre.com.mx/MLM-2593161695-magnesio-12-en-1-suplemento-alimenticio-citrato-malato-sin-sabor-_JM";
-            
-            // Intent para Android (Forza la App)
-            var androidIntent = "intent://" + productUrl + "#Intent;scheme=https;package=com.mercadolibre;end";
-            // Esquema para iOS
-            var iosApp = "mercadolibre://products/MLM2593161695";
-            // Web fallback
-            var webUrl = "https://" + productUrl;
+    <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; max-width: 80%;">
+        <img src="https://http2.mlstatic.com/static/org-img/homesnode/navigation/ms-icon-144x144.png" width="60" style="margin-bottom: 20px;">
+        <h2 style="color: #333; font-size: 1.2rem; margin-bottom: 20px;">Abrir Magnesio 12 en 1 en la App de Mercado Libre</h2>
+        
+        <a href="intent://articulo.mercadolibre.com.mx/MLM-2593161695-magnesio-12-en-1-suplemento-alimenticio-citrato-malato-sin-sabor-_JM#Intent;scheme=https;package=com.mercadolibre;end" 
+           style="background-color: #3483fa; color: white; padding: 18px 40px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1rem; display: block;">
+           IR A LA APP AHORA
+        </a>
+        
+        <p style="color: #666; font-size: 0.8rem; margin-top: 20px;">Si no tienes la app, <a href="https://articulo.mercadolibre.com.mx/MLM-2593161695-magnesio-12-en-1-suplemento-alimenticio-citrato-malato-sin-sabor-_JM" style="color: #3483fa;">continúa en el navegador</a>.</p>
+    </div>
 
-            var isAndroid = /Android/i.test(navigator.userAgent);
-            
-            // Intento de redirección inmediata
-            if (isAndroid) {
-                window.location.href = androidIntent;
-            } else {
-                window.location.href = iosApp;
-            }
-
-            // Fallback: si en 3 segundos no salió de aquí, manda a la web
-            setTimeout(function() {
-                window.location.href = webUrl;
-            }, 3000);
-        })();
-    </script>
 </body>
 </html>
